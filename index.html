@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Air Quality Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PranaVayu</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Real-Time AQI Tracker</h1>
+            <p>Track real-time air quality effortlessly</p>
+            <a href="#services" class="btn">View Services</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About</h2>
+                <p><strong>Real-time AQI updates for everyone</strong></p>
+                <p>Real-Time AQI Tracker is your go-to web application for monitoring the air quality in Bengaluru, IN. Our platform provides instant updates on the Air Quality Index (AQI) for any city you choose. With user-friendly features like live charts illustrating AQI trends and categorized health alerts, you can make informed decisions about your environment.</p>
+                <p>Stay proactive about your health and well-being with our modern, responsive design that ensures access on any device.</p>
+                <a href="#contact" class="btn">Get in touch</a>
+            </div>
+            <div class="about-image">
+                <img src="https://miro.medium.com/max/1200/1*7mDf9UUj6jVcoZgbHMM40A.jpeg" alt="Air Quality Illustration">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>We provide real-time air quality tracking and forecasting using advanced AI models. Our system gathers live data from multiple sources to deliver accurate AQI updates, helping individuals, businesses, and governments make informed decisions. Whether you need air pollution insights for health reasons, environmental studies, or policy planning, our platform ensures up-to-date and reliable information.</p>
+        <div class="services-container">
+            <a href="index.html" class="learn-more">AQI Tracking</a>
+            <img src="https://www.insightsonindia.com/wp-content/uploads/2020/10/pollution_control.png" alt="Pollution Control" class="services-image">
+        </div>
+    </section>
+    <section id="how-it-works">
+        <p style="color: green; font-weight: bold; text-align: center;">TRACK YOUR AIR QUALITY</p>
+        <h2 style="text-align: center;">Stay informed with real-time AQI updates</h2>
+        
+        <div class="how-it-works-container">
+            <div class="how-it-works-item">
+                <img src="https://www.fastcomm.com/wp-content/uploads/2021/04/Air-Quality-Monitoring-with-IoT.jpg" alt="City AQI Data">
+
+                <h3>Fetch Real-Time AQI data</h3>
+                <p>Access current AQI data for any city at your convenience.</p>
+                <a href="javascript:void(0);" class="learn-more-btn" onclick="openModal()">Learn more</a>
+
+<!-- Modal Structure -->
+<div id="aqiModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img src="https://www.fastcomm.com/wp-content/uploads/2021/04/Air-Quality-Monitoring-with-IoT.jpg" alt="City AQI">
+
+            </div>
+            <div class="modal-text">
+                <h2>Fetch Real-Time AQI Data</h2>
+                <p>
+                    With our Real-Time AQI Tracker, you can instantly access the current Air Quality Index 
+                    for any city in Bengaluru or beyond. Simply enter the desired city name into the search 
+                    bar, and our application will provide you with accurate and up-to-date AQI readings. 
+                    This feature allows you to stay informed about air quality conditions in your area or 
+                    wherever you may be planning to go. Whether you're looking for daily updates or 
+                    specific information for a particular event, our tracker ensures you have the data 
+                    you need at your fingertips.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            <div class="how-it-works-item">
+                <img src="https://aiworldschool.com/wp-content/uploads/2021/02/AI-for-Clean-Air_0002_AI-for-air-pollution.png" alt="Live AQI Trends">
+
+                <h3>View live AQI trends</h3>
+                <p>Analyze AQI trends with dynamic live charts for better insights.</p>
+            
+            </div>
+        </div>
+        <!-- Modal Structure for Live AQI Trends -->
+<div id="liveAqiTrendsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLiveAqiTrendsModal()">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img src="https://aiworldschool.com/wp-content/uploads/2021/02/AI-for-Clean-Air_0002_AI-for-air-pollution.png" alt="Live AQI Trends">
+            </div>
+            <div class="modal-text">
+                <h2>View Live AQI Trends</h2>
+                <p>
+                    Analyze AQI trends with dynamic live charts for better insights. Our AI-powered tracking 
+                    system continuously monitors air quality changes, providing real-time data visualization 
+                    and historical trends. Understand how pollution levels fluctuate and make informed 
+                    decisions for health and environmental safety. Stay ahead with the latest AQI trends 
+                    and take proactive steps to ensure cleaner air.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function openLiveAqiTrendsModal() {
+        document.getElementById("liveAqiTrendsModal").style.display = "block";
+    }
+
+    function closeLiveAqiTrendsModal() {
+        document.getElementById("liveAqiTrendsModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        var modal = document.getElementById("liveAqiTrendsModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<a href="javascript:void(0);" class="learn-more-btn" onclick="openLiveAqiTrendsModal()">Learn more</a>
+
+
+        
+    </section>
+    <section id="contact" style="text-align: center; padding: 50px; background-color: #3e3b41;">
+        <h2 style="color: #f6f3f9; font-size: 28px; font-weight: bold;">Contact Us</h2>
+        <form style="max-width: 500px; margin: 20px auto;">
+            <input type="text" placeholder="Your Name" style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;">
+            <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;">
+            <textarea placeholder="Your Message" rows="4" style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+            <button type="submit" style="background-color: #121112; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">Send Message</button>
+        </form>
+        <p style="margin-top: 20px; color: #efeeee;">Connect with us on LinkedIn: <a href="https://www.linkedin.com/company/pranavayu/" target="_blank" style="color: #e6e3e8; font-weight: bold;">Pranavayu LinkedIn</a></p>
+    </section>
+</body>
+</html>
